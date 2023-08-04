@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #08d8f8;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dice {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.diceTwo{
+    width: 120px;
+    height: 120px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+.diceTwo::before,
+.diceTwo::after {
+    content: "";
+    width: 25%;
+    height: 25%;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.diceTwo::before{
+    top: 25%;
+    left: 25%;
+}
+
+.diceTwo::after{
+    bottom: 25%;
+    right: 25%;
+}
+.dice::before,
+.dice::after {
+    content: "";
+    width: 25%;
+    height: 25%;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.dice::before {
+    top: 25%;
+    left: 25%;
+}
+
+.dice::after {
+    bottom: 25%;
+    right: 25%;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#resultTwo{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center bottom;
+    margin-top: 20px;
+}
